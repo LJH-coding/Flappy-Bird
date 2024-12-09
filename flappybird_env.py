@@ -20,7 +20,7 @@ class FlappyBirdEnv(gym.Env):
         self.action_space = Discrete(len(self.env.getActionSet()))
 
         self.observation_space = Box(
-            low=0,
+            low=-np.inf,
             high=np.inf,
             shape=(8,),
             dtype=np.float32,

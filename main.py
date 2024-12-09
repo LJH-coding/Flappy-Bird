@@ -86,6 +86,7 @@ def train(agent, env, episodes):
 
 if __name__ == '__main__':
     args = parse_args()
+    os.makedirs('./checkpoints', exist_ok=True)
 
     env = gym.make("FlappyBird-v0")
 
